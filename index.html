@@ -8,8 +8,19 @@
   <meta name="description" content="Login for Slime Craft">
   <meta name="author" content="Chloe">
 
+
+</head>
+
+<body>
+
+<h1>Login Page   - Slime Craft</h1> 
+
   
-<script type="text/javascript">
+    <input type="text" id="username" placeholder="username"><br>
+    <input type="password" id="password" placeholder="password"><br>
+    <button type="button" id="loginbutton" onclick="login()" >Login</button>
+  
+<script>
 function login() {
 	alert("hi");
 	var username=document.getElementById("username").value;
@@ -19,16 +30,5 @@ function login() {
 		window.location.href='home.html';
 	}
   </script>
-</head>
-
-<body>
-  <script src="login.js"></script>
-<h1>Login Page   - Slime Craft</h1> 
-
-  
-    <input type="text" id="username" placeholder="username"><br>
-    <input type="password" id="password" placeholder="password"><br>
-    <button type="button" id="loginbutton" onclick="login()" >Login</button>
-
 </body>
 </html>
