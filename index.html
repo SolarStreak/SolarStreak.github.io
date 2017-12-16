@@ -10,13 +10,13 @@
 
   <link rel="stylesheet" href="css/styles.css">
 <script type="text/javascript">
-  function login() {
-var username=document.getElementById('username').value;
-var password=document.getElementById('password').value;
-alert(username+" "+password);
-if (username==='Solar' && password==='Streak'){
-	window.location.href='home.html';
-}
+function login() {
+	var username=document.getElementById("username").value;
+	var password=document.getElementById("password").value;
+	alert(username+" "+password);
+	if (username==='Solar' && password==='Streak'){
+		window.location.href='home.html';
+	}
   </script>
 </head>
 
@@ -24,10 +24,10 @@ if (username==='Solar' && password==='Streak'){
   <script src="login.js"></script>
 <h1>Login Page  - Slime Craft</h1> 
 <div id="Login">
-  <form id="loginform" name="myForm" onsubmit="return login()" method="post">  
+  <form id="loginform" name="myForm">  
     <input type="text" id="username" placeholder="username"><br>
     <input type="password" id="password" placeholder="password"><br>
-    <button type="submit" id="loginbutton" >Login</button>
+    <button type="button" id="loginbutton" onclick="login()" >Login</button>
   </form>
   </div>
 </body>
