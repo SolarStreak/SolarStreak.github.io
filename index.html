@@ -14,12 +14,12 @@
 
 <body>
   <script src="login.js"></script>
-<h1>Login Page - Slime Craft</h1> 
+<h1>Login  - Slime Craft</h1> 
 <div id="Login">
-  <form id="loginform">  
+  <form id="loginform" name="myForm" action="/home.html" onsubmit="return login()" method="post">  
     <input type="text" id="username" placeholder="username"><br>
     <input type="password" id="password" placeholder="password"><br>
-    <button type="submit" id="loginbutton" onclick="login()">Login</button>
+    <button type="submit" id="loginbutton" >Login</button>
   </form>
   </div>
 </body>
