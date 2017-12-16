@@ -1,7 +1,13 @@
-function login() {
-var username=document.getElementById('username').value;
-var password=document.getElementById('password').value;
-alert(username+" "+password);
-if (username==='Solar' && password==='Streak'){
-	window.location.href='home.html';
+function myFunction() {
+    var user, pass;
+
+    
+    user = document.getElementById("username").value;
+    pass = document.getElementById("password").value;
+
+    alert("hi");
+    if (user==="Solar" && pass ==="Streak") {
+        window.location.href='home.html';
+    }
+    
 }
