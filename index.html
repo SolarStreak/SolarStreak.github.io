@@ -9,12 +9,20 @@
   <meta name="author" content="Chloe">
 
   <link rel="stylesheet" href="css/styles.css">
-
+<script type="text/javascript">
+  function login() {
+var username=document.getElementById('username').value;
+var password=document.getElementById('password').value;
+alert(username+" "+password);
+if (username==='Solar' && password==='Streak'){
+	window.location.href='home.html';
+}
+  </script>
 </head>
 
 <body>
   <script src="login.js"></script>
-<h1>Login  - Slime Craft</h1> 
+<h1>Login Page 2  - Slime Craft</h1> 
 <div id="Login">
   <form id="loginform" name="myForm" action="/home.html" onsubmit="return login()" method="post">  
     <input type="text" id="username" placeholder="username"><br>
